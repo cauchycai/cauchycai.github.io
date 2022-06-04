@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content=" First level heading  Second level heading   A source code example  # 词性标注 import nltk import pycrfsuite import numpy as np import pandas as pd train_data = pd.read_csv(&#39;msra_train_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None) test_data = pd.read_csv(&#39;msra_test_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None)    Other syntax examples  BOLD, italic, underlined, deleted
     ">
-    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="generator" content="Hugo 0.92.1" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -32,20 +32,16 @@
 <meta property="og:description" content=" First level heading  Second level heading   A source code example  # 词性标注 import nltk import pycrfsuite import numpy as np import pandas as pd train_data = pd.read_csv(&#39;msra_train_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None) test_data = pd.read_csv(&#39;msra_test_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None)    Other syntax examples  BOLD, italic, underlined, deleted
     " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cauchycai.github.io/posts/1/" />
+<meta property="og:url" content="https://cauchycai.github.io/posts/1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-11-15T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-11-15T00:00:00+00:00" />
+
 <meta itemprop="name" content="Using Org Mode in Hugo">
 <meta itemprop="description" content=" First level heading  Second level heading   A source code example  # 词性标注 import nltk import pycrfsuite import numpy as np import pandas as pd train_data = pd.read_csv(&#39;msra_train_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None) test_data = pd.read_csv(&#39;msra_test_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None)    Other syntax examples  BOLD, italic, underlined, deleted
-    ">
-<meta itemprop="datePublished" content="2020-11-15T00:00:00+00:00" />
+    "><meta itemprop="datePublished" content="2020-11-15T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-11-15T00:00:00+00:00" />
 <meta itemprop="wordCount" content="37">
-
-
-
-<meta itemprop="keywords" content="howto,,emacs,,hugo," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="howto,,emacs,,hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Org Mode in Hugo"/>
 <meta name="twitter:description" content=" First level heading  Second level heading   A source code example  # 词性标注 import nltk import pycrfsuite import numpy as np import pandas as pd train_data = pd.read_csv(&#39;msra_train_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None) test_data = pd.read_csv(&#39;msra_test_bio_simple.txt&#39;,sep=&#39;\t&#39;,header=None)    Other syntax examples  BOLD, italic, underlined, deleted
     "/>
@@ -161,14 +157,14 @@ A source code example
 </h3>
 <div id="outline-text-headline-3" class="outline-text-3">
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 词性标注</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 词性标注</span>
 <span style="color:#f92672">import</span> nltk
 <span style="color:#f92672">import</span> pycrfsuite
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
-train_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;msra_train_bio_simple.txt&#39;</span>,sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>,header<span style="color:#f92672">=</span>None)
-test_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;msra_test_bio_simple.txt&#39;</span>,sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>,header<span style="color:#f92672">=</span>None)</code></pre></div>
+train_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;msra_train_bio_simple.txt&#39;</span>,sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>,header<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+test_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;msra_test_bio_simple.txt&#39;</span>,sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>,header<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)</code></pre></div>
 </div>
 </div>
 </div>
@@ -216,7 +212,7 @@ Other syntax examples
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cauchycai.github.io/" >
-    &copy;  Cauchy's Notes 2020 
+    &copy;  Cauchy's Notes 2022 
   </a>
     <div>
 
